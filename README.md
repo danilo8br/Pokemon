@@ -35,3 +35,9 @@ import matplotlib.pyplot as plt
  ```
  df = pd.read_csv('pokemon_data.csv')
  ```
+
+### Colunas
+
+<details><summary>Colunas do arquivo</summary>
+  Todas as colunas do arquivo
+</details>
