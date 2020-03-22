@@ -6,7 +6,7 @@
 - Neste projeto utilizei um Dataset do site Kiggle de um anime chamado Pokemon, esse projeto é semelhante ao meu outro repositório chamado Yu-Gi-Oh que também peguei do site Kiggle. Então ele vai mostrar as evoluções dos principais Pokemons, os Pokemons mais fortes e fracos de todos os tipos, a contagem de todos tipos de Pokemons como por exemplo água ou fogo e pra finalizar passei tudo para alguns tipos de gráficos para você meu consagrado ter uma noção das coisas incríveis que podemos fazer na área de Data Science.
 
 
-#### Módulos
+### Módulos
 
 Importando Bibliotecas
 
