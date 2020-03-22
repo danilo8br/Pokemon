@@ -41,3 +41,7 @@ import matplotlib.pyplot as plt
 <details><summary>Colunas do arquivo</summary>
   Todas as colunas do arquivo
 </details>
+
+```
+df.columns
+```
