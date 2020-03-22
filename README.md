@@ -45,3 +45,13 @@ import matplotlib.pyplot as plt
 ```
 df.columns
 ```
+
+### Deletando colunas
+
+<details><summary>Deletando colunas do arquivo</summary>
+  Deletando a coluna "#" para não ocorrer problemas para o índice
+</details>
+
+```
+df = df.drop(columns=['#'])
+```
