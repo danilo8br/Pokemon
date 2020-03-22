@@ -30,3 +30,8 @@ import matplotlib.pyplot as plt
 
 <details><summary>Leitura de arquivo<summary>
   Criando uma variavel que vai armazenar um arquivo e fazendo leitura do mesmo
+  </details>
+  
+ ```
+ df = pd.read_csv('pokemon_data.csv')
+ ```
