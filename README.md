@@ -18,9 +18,9 @@ Importando Bibliotecas
 import pandas as pd
 ```
 
-<details><summary>MatPlotLib</summary>
+<details><summary>Matplotlib</summary>
   Importando a biblioteca matplotlib para gráficos
-</deatails>
+</details>
 
 ```
 import matplotlib.pyplot as plt
