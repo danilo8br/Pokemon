@@ -55,3 +55,9 @@ df.columns
 ```
 df = df.drop(columns=['#'])
 ```
+
+### Colunas e dados
+
+<details><summary>Dados que contem nas colunas</summary>
+  Mostrando os dados
+</details>
