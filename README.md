@@ -8,7 +8,7 @@
 
 ### Módulos
 
-- Importando Bibliotecas
+Importando Bibliotecas
 
 <details><summary>Pandas</summary>
   Importando a biblioteca Pandas para análise de dados
