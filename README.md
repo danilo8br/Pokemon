@@ -13,3 +13,7 @@ Importando Bibliotecas
 <details><summary>Pandas</summary>
   Importando a biblioteca Pandas para análise de dados
 </details>
+
+´´´
+import pandas as pd
+´´´
