@@ -17,3 +17,11 @@ Importando Bibliotecas
 ```
 import pandas as pd
 ```
+
+<details><summary>MatPlotLib</summary>
+  Importando a biblioteca matplotlib para gráficos
+</deatails>
+
+```
+import matplotlib.pyplot as plt
+```
