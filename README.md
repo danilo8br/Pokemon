@@ -26,4 +26,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 ```
 
-### Leitura de arquivo
+### Leitura
+
+<details><summary>Leitura de arquivo<summary>
+  Criando uma variavel que vai armazenar um arquivo e fazendo leitura do mesmo
