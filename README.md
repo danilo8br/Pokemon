@@ -28,7 +28,7 @@ import matplotlib.pyplot as plt
 
 ### Leitura
 
-<details><summary>Leitura de arquivo<summary>
+<details><summary>Leitura de arquivo</summary>
   Criando uma variavel que vai armazenar um arquivo e fazendo leitura do mesmo
   </details>
   
