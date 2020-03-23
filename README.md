@@ -464,6 +464,33 @@ df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Fairy')].iloc[0:10
 df.groupby(['Type 1']).count()
 ```
 
+<details><summary>Calculando</summary>
+  Calculando todos os tipos de Pokemons
+</details>
+
+```
+bug = df[df['Type 1'] == 'Bug'].shape[0]
+dark = df[df['Type 1'] == 'Dark'].shape[0]
+dragon = df[df['Type 1'] == 'Dragon'].shape[0]
+eletric = df[df['Type 1'] == 'Eletric'].shape[0]
+fairy = df[df['Type 1'] == 'Fairy'].shape[0]
+fighting = df[df['Type 1'] == 'Fighting'].shape[0]
+fire = df[df['Type 1'] == 'Fire'].shape[0]
+flying = df[df['Type 1'] == 'Flying'].shape[0]
+ghost = df[df['Type 1'] == 'Ghost'].shape[0]
+grass = df[df['Type 1'] == 'Grass'].shape[0]
+ground = df[df['Type 1'] == 'Ground'].shape[0]
+ice = df[df['Type 1'] == 'Ice'].shape[0]
+normal = df[df['Type 1'] == 'Normal'].shape[0]
+poison = df[df['Type 1'] == 'Poison'].shape[0]
+psychic = df[df['Type 1'] == 'Psychic'].shape[0]
+rock = df[df['Type 1'] == 'Rock'].shape[0]
+steel = df[df['Type 1'] == 'Steel'].shape[0]
+water = df[df['Type 1'] == 'Water'].shape[0]
+```
+
+- ## Visualização em Gráficos
+
 <details><summary>Gráfico 1</summary>
   Porcentagem dos tipos de Pokemons
 </details>
