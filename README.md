@@ -165,7 +165,7 @@ df.sort_values(['Name']).loc[df['Name'].str.contains('chu') & (df['Attack'] >= 4
 
 ### Os 10 mais fortes e fracos
 
-<details><summary>Pokemons Normais Fortes</summary>
+<details><summary>Tipo Normais Fortes</summary>
   Os 10 Pokemons do tipo Normal mais fortes
 </details>
 
@@ -173,10 +173,91 @@ df.sort_values(['Name']).loc[df['Name'].str.contains('chu') & (df['Attack'] >= 4
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Normal')].iloc[0:10]
 ```
 
-<details><summary>Pokemons Normais Fracos</summary>
+<details><summary>Tipo Normais Fracos</summary>
   Os 10 Pokemons do tipo Normal mais fracos
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Normal')].iloc[0:10]
+```
+
+
+<details><summary>Tipo Fogo Fortes</summary>
+  Os 10 Pokemons do tipo fogo mais fortes
+</details>
+
+```
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Fire')].iloc[0:10]
+```
+
+<details><summary>Tipo Fogo Fracos</summary>
+  Os 10 Pokemons do tipo fogo mais fracos
+</details>
+
+```
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Fire')].iloc[0:10]
+```
+
+<details><summary>Tipo Água Fortes</summary>
+  Os 10 Pokemons do tipo água mais fortes
+</details>
+
+```
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Water')].iloc[0:10]
+```
+
+<details><summary>Tipo Água Fracos</summary>
+  Os 10 Pokemons do tipo água mais fracos
+</details>
+
+```
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Water')].iloc[0:10]
+```
+
+<details><summary>Tipo Elétricos Fortes</summary>
+  Os 10 Pokemons do tipo elétrico mais fortes
+</details>
+
+```
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Electric')].iloc[0:10]
+```
+
+<details><summary>Tipo Elétrico Fracos</summary>
+  Os 10 Pokemons do tipo elétrico mais fracos
+</details>
+
+```
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Electric')].iloc[0:10]
+```
+
+<details><summary>Tipo Grama Fortes</summary>
+  Os 10 Pokemons do tipo grama mais fortes
+</details>
+
+```
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Grass')].iloc[0:10]
+```
+
+<details><summary>Tipo Grama Fracos</summary>
+  Os 10 Pokemons do tipo grama mais fracos
+</details>
+
+```
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Grass')].iloc[0:10]
+```
+
+<details><summary>Tipo Gelo Fortes</summary>
+  Os 10 Pokemons do tipo gelo mais fortes
+</details>
+
+```
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Ice')].iloc[0:10]
+```
+
+<details><summary>Tipo Gelo Fracos</summary>
+  Os 10 Pokemons do tipo gelo mais fracos
+</details>
+
+```
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Ice')].iloc[0:10]
 ```
