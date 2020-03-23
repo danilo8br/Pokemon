@@ -455,3 +455,11 @@ df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Fairy')].iloc[0:10
 ```
 
 - ## A contagem de todos os tipos de Pokemons
+
+<details><summary>Todos os Tipos de Pokemons</summary>
+  Contando quantos Pokemons de todos os tipos existem no arquivo
+</details>
+
+```
+df.groupby(['Type 1']).count()
+```
