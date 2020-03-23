@@ -261,3 +261,195 @@ df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Ice')].iloc[0:10]
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Ice')].iloc[0:10]
 ```
+
+<details><summary>Tipo Lutador Fortes</summary>
+  Os 10 Pokemons do tipo lutador mais fortes
+</details>
+
+```
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Fighting')].iloc[0:10]
+```
+
+<details><summary>Tipo Lutador Fracos</summary>
+  Os 10 Pokemons do tipo lutador mais fracos
+</details>
+
+```
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Fighting')].iloc[0:10]
+```
+
+<details><summary>Tipo Veneno Fortes</summary>
+  Os 10 Pokemons do tipo veneno mais fortes
+</details>
+
+```
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Poison')].iloc[0:10]
+```
+
+<details><summary>Tipo Veneno Fracos</summary>
+  Os 10 Pokemons do tipo veneno mais fracos
+</details>
+
+```
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Poison')].iloc[0:10]
+```
+
+<details><summary>Tipo Terra Fortes</summary>
+  Os 10 Pokemons do tipo terra mais fortes
+</details>
+
+```
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Ground')].iloc[0:10]
+```
+
+<details><summary>Tipo Terra Fracos</summary>
+  Os 10 Pokemons do tipo terra mais fracos
+</details>
+
+```
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Ground')].iloc[0:10]
+```
+
+<details><summary>Tipo Voador Fortes</summary>
+  Os 10 Pokemons do tipo voador mais fortes
+</details>
+
+```
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Flying')].iloc[0:10]
+```
+
+<details><summary>Tipo Voador Fracos</summary>
+  Os 4 Pokemons do tipo voador mais fracos
+</details>
+
+```
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Flying')].iloc[0:10]
+```
+
+<details><summary>Tipo Psíquico Fortes</summary>
+  Os 10 Pokemons do tipo psíquico mais fortes
+</details>
+
+```
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Psychic')].iloc[0:10]
+```
+
+<details><summary>Tipo Psíquico Fracos</summary>
+  Os 10 Pokemons do tipo psíquico mais fracos
+</details>
+
+```
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Psychic')].iloc[0:10]
+```
+
+<details><summaryTipo Inseto Fortes></summary>
+  Os 10 Pokemons do tipo inseto mais fortes
+</details>
+
+```
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Bug')].iloc[0:10]
+```
+
+<details><summary>Tipo Inseto Fracos</summary>
+  Os 10 Pokemons do tipo inseto mais fracos
+</details>
+
+```
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Bug')].iloc[0:10]
+```
+
+<details><summary>Tipo Pedra Fortes</summary>
+  Os 10 Pokemons do tipo pedra mais fortes
+</details>
+
+```
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Rock')].iloc[0:10]
+```
+
+<details><summary>Tipo Pedra Fracos</summary>
+  Os 10 Pokemons do tipo pedra mais fracos
+</details>
+
+```
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Rock')].iloc[0:10]
+```
+
+<details><summary>Tipo Fantasma Fortes</summary>
+  Os 10 Pokemons do tipo fantasma mais fortes
+</details>
+
+```
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Ghost')].iloc[0:10]
+```
+
+<details><summary>Tipo Fantasma Fracos</summary>
+  Os 10 Pokemons do tipo fantasma mais fracos 
+</details>
+
+```
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Ghost')].iloc[0:10]
+```
+
+<details><summary>Tipo Dragão Fortes</summary>
+  Os 10 Pokemons do tipo dragão mais fortes
+</details>
+
+```
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Dragon')].iloc[0:10]
+```
+
+<details><summary>Tipo Dragão Fracos</summary>
+  Os 10 Pokemons do tipo dragão mais fracos
+</details>
+
+```
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Dragon')].iloc[0:10]
+```
+
+<details><summary>Tipo Noturno Fortes</summary>
+  Os 10 Pokemons do tipo noturno mais fortes
+</details>
+
+```
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Dark')].iloc[0:10]
+```
+
+<details><summary>Tipo Noturno Fracos</summary>
+  Os 10 Pokemons do tipo noturno mais fracos
+</details>
+
+```
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Dark')].iloc[0:10]
+```
+
+<details><summary>Tipo Aços Fortes</summary>
+  Os 10 Pokemons do tipo aço mais fortes
+</details>
+
+```
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Steel')].iloc[0:10]
+```
+
+<details><summary>Tipo Aços Fracos</summary>
+  Os 10 Pokemons do tipo aço mais fracos
+</details>
+
+```
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Steel')].iloc[0:10]
+```
+
+<details><summary></summary>
+  
+</details>
+
+```
+
+```
+
+<details><summary></summary>
+  
+</details>
+
+```
+
+```
