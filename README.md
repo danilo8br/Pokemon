@@ -87,3 +87,77 @@ df['Total'] = df['HP'] + df['Attack'] + df['Defense'] + df['Sp. Atk'] + df['Sp. 
 ```
 df.iloc[0:3]
 ```
+
+<details><summary>2°</summary>
+  Evolução: Charmander > Charmeleon > Charizard
+</details>
+
+```
+df.iloc[4:7]
+```
+
+<details><summary>3°</summary>
+  Evolução: Squirtle > Wartortle >Blastoise
+</details>
+
+```
+df.iloc[9:12]
+```
+
+<details><summary>4°</summary>
+  Evolução: Caterpie > Metapod > Butterfree
+</details>
+
+```
+df.iloc[13:16]
+```
+
+<details><summary>5°</summary>
+  Evolução: Weedle > Kakuna > Beedrill
+</details>
+
+```
+df.iloc[16:19]
+```
+
+<details><summary>6°</summary>
+  Evolução: Pidgey > Pidgeotto > Pidgeot
+</details>
+
+```
+df.iloc[20:23]
+```
+
+<details><summary>7°</summary>
+  Evolução: Rattata > Raticate
+</details>
+
+```
+df.iloc[24:26]
+```
+
+<details><summary>8°</summary>
+  Evolução: Speaarow > Fearow
+</details>
+
+```
+df.iloc[26:28]
+```
+
+<details><summary>9°</summary>
+  Evolução: Ekans > Arbok
+</details>
+
+```
+df.iloc[28:30]
+```
+
+
+<details><summary>10°</summary>
+  Evolução: Pichu > Pikachu > Raichu
+</details>
+
+```
+df.sort_values(['Name']).loc[df['Name'].str.contains('chu') & (df['Attack'] >= 40)]
+```
+
