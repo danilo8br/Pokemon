@@ -463,3 +463,26 @@ df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Fairy')].iloc[0:10
 ```
 df.groupby(['Type 1']).count()
 ```
+
+<details><summary>Gráfico 1</summary>
+  Porcentagem dos tipos de Pokemons
+</details>
+
+```
+
+figl, axl = plt.subplots()
+
+# Gráfico
+
+axl.pie(tamanhos, labels=tipos, autopct='%1.1f%%', shadow=True, startangle=100)
+
+# Gráfico em circulo
+axl.axis('equal')
+plt.title('Porcentagem dos tipos de Pokemons')
+plt.plot
+fig=plt.gcf()
+fig.set_size_inches(10,10)
+
+plt.show()
+
+```
