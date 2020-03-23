@@ -469,6 +469,7 @@ df.groupby(['Type 1']).count()
 </details>
 
 ```
+# Area de Protagem
 
 figl, axl = plt.subplots()
 
@@ -485,4 +486,49 @@ fig.set_size_inches(10,10)
 
 plt.show()
 
+```
+
+<details><summary>Gráfico 2</summary>
+  Fogo Vs Água
+</details>
+
+```
+# Type 1 e 2 que contem todos os tipos de Pokemons de Fogo
+fogo = df[(df['Type 1'] == 'Fire') | ((df['Type 2']) == 'Fire')]
+
+
+# Type 1 e 2 que contem todos os tipos de Pokemons de Água
+agua = df[(df['Type 1'] == 'Water') | ((df['Type 2']) == 'Water')]
+
+
+# Gráfico Scatter PLot
+plt.scatter(fogo.Attack.head(50), fogo.Defense.head(50), color='R', label = 'Fire', marker='*', s=50)
+
+plt.scatter(agua.Attack.head(50), agua.Defense.head(50), color='B', label = 'Water', s=25)
+
+plt.xlabel("ATAQUE")
+plt.ylabel("DEFESA")
+plt.legend()
+plt.plot()
+fig = plt.gcf()
+fig.set_size_inches(12,12) #
+plt.show()
+```
+
+<details><summary>Gráfico 3</summary>
+  Números dos Pokemons por tipos e as gerações
+</details>
+
+```
+tipo = df.groupby(['Generation', 'Type 1']).count().reset_index()
+tipo = tipo[['Generation', 'Type 1', 'Total']]
+tipo = tipo.pivot('Generation','Type 1','Total')
+tipo[['Grass', 'Water', 'Fire', 'Rock', 'Normal', 'Dragon', 'Flying', 'Electric', 'Bug', 'Dark', 'Fairy', 'Fighting',
+     'Fire', 'Ghost', 'Ground', 'Ice', 'Poison', 'Psychic', 'Steel']].plot(color= ['G', '#1E90FF', 'R', '#363636', 
+     '#00FFFF', '#F4A460', '#FF4500', '#FFFF00', '#7FFFD4', '#000000','#6A5ACD','#CD5C5C', '#FF1493', 
+     '#8A2BE2', '#F5DEB3', '#556B2F', '#5F9EA0'], marker='o')
+
+fig=plt.gcf()
+fig.set_size_inches(18,10)
+plt.show()
 ```
