@@ -78,3 +78,12 @@ df['Total'] = df['HP'] + df['Attack'] + df['Defense'] + df['Sp. Atk'] + df['Sp. 
 
 - ## Evolução dos 10 primeiros Pokemons
 
+### Principais Pokemons
+
+<details><summary>1°</summary>
+  Evolução: Bulbasaur > Ivysaur > Venusaur
+</details>
+
+```
+df.iloc[0:3]
+```
