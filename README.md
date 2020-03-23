@@ -46,7 +46,7 @@ import matplotlib.pyplot as plt
 df.columns
 ```
 
-### Deletando colunas
+### Deletando Colunas
 
 <details><summary>Deletando colunas do arquivo</summary>
   Deletando a coluna "#" para não ocorrer problemas para o índice
@@ -56,7 +56,7 @@ df.columns
 df = df.drop(columns=['#'])
 ```
 
-### Colunas e dados
+### Colunas e Dados
 
 <details><summary>Dados que contem nas colunas</summary>
   Mostrando os dados
@@ -66,7 +66,7 @@ df = df.drop(columns=['#'])
 df[['Name', 'Type 1', 'Type 2', 'HP', 'Attack', 'Defense', 'Sp. Atk', 'Sp. Def', 'Speed', 'Generation', 'Legendary']]
 ```
 
-### Criando colunas
+### Criando Colunas
 
 <details><summary>Criando uma nova coluna</summary>
   Criando uma coluna que vai somar os ataques e defesas
@@ -161,3 +161,14 @@ df.iloc[28:30]
 df.sort_values(['Name']).loc[df['Name'].str.contains('chu') & (df['Attack'] >= 40)]
 ```
 
+- ## Os Pokemons mais fortes e mais fracos de todos os tipos
+
+### Os 10 mais fortes
+
+<details><summary>Pokemons Normais</summary>
+  Os 10 Pokemons do tipo Normal mais fortes
+</details>
+
+```
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Normal')].iloc[0:10]
+```
