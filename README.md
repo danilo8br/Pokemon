@@ -163,12 +163,20 @@ df.sort_values(['Name']).loc[df['Name'].str.contains('chu') & (df['Attack'] >= 4
 
 - ## Os Pokemons mais fortes e mais fracos de todos os tipos
 
-### Os 10 mais fortes
+### Os 10 mais fortes e fracos
 
-<details><summary>Pokemons Normais</summary>
+<details><summary>Pokemons Normais Fortes</summary>
   Os 10 Pokemons do tipo Normal mais fortes
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Normal')].iloc[0:10]
+```
+
+<details><summary>Pokemons Normais Fracos</summary>
+  Os 10 Pokemons do tipo Normal mais fracos
+</details>
+
+```
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Normal')].iloc[0:10]
 ```
