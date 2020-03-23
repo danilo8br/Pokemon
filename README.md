@@ -438,18 +438,20 @@ df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Steel')].iloc[0:1
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Steel')].iloc[0:10]
 ```
 
-<details><summary></summary>
-  
+<details><summary>Tipo Fada Fortes</summary>
+  Os 10 Pokemons do tipo fada mais fortes
 </details>
 
 ```
-
+df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Fairy')].iloc[0:10]
 ```
 
-<details><summary></summary>
-  
+<details><summary>Tipo Fada Fracos</summary>
+  Os 10 Pokemons do tipo fada mais fracos
 </details>
 
 ```
-
+df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Fairy')].iloc[0:10]
 ```
+
+- ## A contagem de todos os tipos de Pokemons
