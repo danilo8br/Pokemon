@@ -65,3 +65,13 @@ df = df.drop(columns=['#'])
 ```
 df[['Name', 'Type 1', 'Type 2', 'HP', 'Attack', 'Defense', 'Sp. Atk', 'Sp. Def', 'Speed', 'Generation', 'Legendary']]
 ```
+
+### Criando colunas
+
+<details><summary>Criando uma nova coluna</summary>
+  Criando uma coluna que vai somar os ataques e defesas
+</details>
+
+```
+df['Total'] = df['HP'] + df['Attack'] + df['Defense'] + df['Sp. Atk'] + df['Sp. Atk'] + df['Sp. Def'] + df['Speed']
+```
