@@ -1,17 +1,16 @@
 # Pokemon
-- Analise feita de um Dataset com os dados Pokemon utilizando Python e a biblioteca Pandas
+- Analysis made from a Dataset with Pokemon data using Python and the Pandas library
 
 ![full_pokemon](https://user-images.githubusercontent.com/51414398/76796676-b9f27f80-67aa-11ea-8258-e04c0fd579f3.jpg)
 
-- Neste projeto utilizei um Dataset do site Kiggle de um anime chamado Pokemon, esse projeto é semelhante ao meu outro repositório chamado Yu-Gi-Oh que também peguei do site Kiggle. Então ele vai mostrar as evoluções dos principais Pokemons, os Pokemons mais fortes e fracos de todos os tipos, a contagem de todos tipos de Pokemons como por exemplo água ou fogo e pra finalizar passei tudo para alguns tipos de gráficos para você meu consagrado ter uma noção das coisas incríveis que podemos fazer na área de Data Science.
+- In this project I used a Dataset from the Kiggle website of an anime called Pokemon, this project is similar to my other repository called Yu-Gi-Oh which I also got from the Kiggle website. Then it will show the evolution of the main Pokemons, the strongest and weakest Pokémon of all types, the count of all types of Pokemons such as water or fire and to finish I passed everything to some types of graphics for you my consecrated to have a sense of the incredible things that we can do in the field of Data Science.
 
 
-### Módulos
-
-Importando Bibliotecas
+### Modules
+Importing Libraries
 
 <details><summary>Pandas</summary>
-  Importando a biblioteca Pandas para análise de dados
+  Importing the Pandas library for data analysis
 </details>
 
 ```
@@ -19,69 +18,69 @@ import pandas as pd
 ```
 
 <details><summary>Matplotlib</summary>
-  Importando a biblioteca matplotlib para gráficos
+  Importing the matplotlib library for graphics
 </details>
 
 ```
 import matplotlib.pyplot as plt
 ```
 
-### Leitura
+### Reading
 
-<details><summary>Leitura de arquivo</summary>
-  Criando uma variavel que vai armazenar um arquivo e fazendo leitura do mesmo
+<details><summary>Reading file</summary>
+  Creating a variable that will store a file and reading it
   </details>
   
  ```
  df = pd.read_csv('pokemon_data.csv')
  ```
 
-### Colunas
+### Columns
 
-<details><summary>Colunas do arquivo</summary>
-  Todas as colunas do arquivo
+<details><summary>File columns</summary>
+  All columns in the file
 </details>
 
 ```
 df.columns
 ```
 
-### Deletando Colunas
+### Deleting Columns
 
-<details><summary>Deletando colunas do arquivo</summary>
-  Deletando a coluna "#" para não ocorrer problemas para o índice
+<details><summary>Deleting columns from the file</summary>  
+  Deleting the "#" column to avoid problems with the index
 </details>
 
 ```
 df = df.drop(columns=['#'])
 ```
 
-### Colunas e Dados
+### Columns and Data
 
-<details><summary>Dados que contem nas colunas</summary>
-  Mostrando os dados
+<details><summary>Data in columns</summary>
+  Showing the data
 </details>
 
 ```
 df[['Name', 'Type 1', 'Type 2', 'HP', 'Attack', 'Defense', 'Sp. Atk', 'Sp. Def', 'Speed', 'Generation', 'Legendary']]
 ```
 
-### Criando Colunas
+### Creating columns
 
-<details><summary>Criando uma nova coluna</summary>
-  Criando uma coluna que vai somar os ataques e defesas
+<details><summary>Creating a new column</summary>
+  Creating a column that will add the attacks and defenses
 </details>
 
 ```
 df['Total'] = df['HP'] + df['Attack'] + df['Defense'] + df['Sp. Atk'] + df['Sp. Atk'] + df['Sp. Def'] + df['Speed']
 ```
 
-- ## Evolução dos 10 primeiros Pokemons
+- ## Evolution of the first 10 Pokémon
 
-### Principais Pokemons
+### Main Pokemon
 
 <details><summary>1°</summary>
-  Evolução: Bulbasaur > Ivysaur > Venusaur
+  Evolution: Bulbasaur > Ivysaur > Venusaur
 </details>
 
 ```
@@ -89,7 +88,7 @@ df.iloc[0:3]
 ```
 
 <details><summary>2°</summary>
-  Evolução: Charmander > Charmeleon > Charizard
+  Evolution: Charmander > Charmeleon > Charizard
 </details>
 
 ```
@@ -97,7 +96,7 @@ df.iloc[4:7]
 ```
 
 <details><summary>3°</summary>
-  Evolução: Squirtle > Wartortle >Blastoise
+  Evolution: Squirtle > Wartortle >Blastoise
 </details>
 
 ```
@@ -105,7 +104,7 @@ df.iloc[9:12]
 ```
 
 <details><summary>4°</summary>
-  Evolução: Caterpie > Metapod > Butterfree
+  Evolution: Caterpie > Metapod > Butterfree
 </details>
 
 ```
@@ -113,7 +112,7 @@ df.iloc[13:16]
 ```
 
 <details><summary>5°</summary>
-  Evolução: Weedle > Kakuna > Beedrill
+  Evolution: Weedle > Kakuna > Beedrill
 </details>
 
 ```
@@ -121,7 +120,7 @@ df.iloc[16:19]
 ```
 
 <details><summary>6°</summary>
-  Evolução: Pidgey > Pidgeotto > Pidgeot
+  Evolution: Pidgey > Pidgeotto > Pidgeot
 </details>
 
 ```
@@ -129,7 +128,7 @@ df.iloc[20:23]
 ```
 
 <details><summary>7°</summary>
-  Evolução: Rattata > Raticate
+  Evolution: Rattata > Raticate
 </details>
 
 ```
@@ -137,7 +136,7 @@ df.iloc[24:26]
 ```
 
 <details><summary>8°</summary>
-  Evolução: Speaarow > Fearow
+  Evolution: Speaarow > Fearow
 </details>
 
 ```
@@ -145,7 +144,7 @@ df.iloc[26:28]
 ```
 
 <details><summary>9°</summary>
-  Evolução: Ekans > Arbok
+  Evolution: Ekans > Arbok
 </details>
 
 ```
@@ -154,27 +153,27 @@ df.iloc[28:30]
 
 
 <details><summary>10°</summary>
-  Evolução: Pichu > Pikachu > Raichu
+  Evolution: Pichu > Pikachu > Raichu
 </details>
 
 ```
 df.sort_values(['Name']).loc[df['Name'].str.contains('chu') & (df['Attack'] >= 40)]
 ```
 
-- ## Os Pokemons mais fortes e mais fracos de todos os tipos
+- ## The strongest and weakest Pokemon of all types
 
-### Os 10 mais fortes e fracos
+### The 10 strongest and weakest
 
-<details><summary>Tipo Normais Fortes</summary>
-  Os 10 Pokemons do tipo Normal mais fortes
+<details><summary>Strong Normal Type</summary>
+  The 10 strongest Normal Pokemon
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Normal')].iloc[0:10]
 ```
 
-<details><summary>Tipo Normais Fracos</summary>
-  Os 10 Pokemons do tipo Normal mais fracos
+<details><summary>Type Normal Weak</summary>
+  The 10 weakest Normal Pokemon
 </details>
 
 ```
@@ -182,103 +181,103 @@ df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Normal')].iloc[0:1
 ```
 
 
-<details><summary>Tipo Fogo Fortes</summary>
-  Os 10 Pokemons do tipo fogo mais fortes
+<details><summary>Strong Fire Type</summary>
+  The 10 strongest fire Pokemon
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Fire')].iloc[0:10]
 ```
 
-<details><summary>Tipo Fogo Fracos</summary>
-  Os 10 Pokemons do tipo fogo mais fracos
+<details><summary>Weak Fire Type</summary>
+  The 10 weakest fire type Pokemon
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Fire')].iloc[0:10]
 ```
 
-<details><summary>Tipo Água Fortes</summary>
-  Os 10 Pokemons do tipo água mais fortes
+<details><summary>Strong Water Type</summary>
+  The 10 strongest water-type Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Water')].iloc[0:10]
 ```
 
-<details><summary>Tipo Água Fracos</summary>
-  Os 10 Pokemons do tipo água mais fracos
+<details><summary>Poor Water Type</summary>
+  The 10 weakest water type Pokemon
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Water')].iloc[0:10]
 ```
 
-<details><summary>Tipo Elétricos Fortes</summary>
-  Os 10 Pokemons do tipo elétrico mais fortes
+<details><summary>Type Electric Strong</summary> 
+  The 10 strongest electric type Pokemon
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Electric')].iloc[0:10]
 ```
 
-<details><summary>Tipo Elétrico Fracos</summary>
-  Os 10 Pokemons do tipo elétrico mais fracos
+<details><summary>Weak Electric Type</summary>
+  The 10 weakest electric type Pokemon
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Electric')].iloc[0:10]
 ```
 
-<details><summary>Tipo Grama Fortes</summary>
-  Os 10 Pokemons do tipo grama mais fortes
+<details><summary>Strong Grass Type</summary>
+  The 10 strongest grass-type Pokemon
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Grass')].iloc[0:10]
 ```
 
-<details><summary>Tipo Grama Fracos</summary>
-  Os 10 Pokemons do tipo grama mais fracos
+<details><summary>Weak Grass Type</summary>
+  The 10 weakest grass-type Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Grass')].iloc[0:10]
 ```
 
-<details><summary>Tipo Gelo Fortes</summary>
-  Os 10 Pokemons do tipo gelo mais fortes
+<details><summary>Strong Ice Type</summary> 
+  The 10 strongest ice type Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Ice')].iloc[0:10]
 ```
 
-<details><summary>Tipo Gelo Fracos</summary>
-  Os 10 Pokemons do tipo gelo mais fracos
+<details><summary>Weak Ice Type</summary>
+  The 10 weakest ice type Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Ice')].iloc[0:10]
 ```
 
-<details><summary>Tipo Lutador Fortes</summary>
-  Os 10 Pokemons do tipo lutador mais fortes
+<details><summary>Strong Fighter Type</summary>
+  The 10 strongest fighter type Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Fighting')].iloc[0:10]
 ```
 
-<details><summary>Tipo Lutador Fracos</summary>
-  Os 10 Pokemons do tipo lutador mais fracos
+<details><summary>Weak Fighter Type</summary>
+ The 10 weakest fighter Pokemon
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Fighting')].iloc[0:10]
 ```
 
-<details><summary>Tipo Veneno Fortes</summary>
+<details><summary>Strong Poison Type</summary>
   Os 10 Pokemons do tipo veneno mais fortes
 </details>
 
@@ -286,186 +285,186 @@ df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Fighting')].iloc[0
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Poison')].iloc[0:10]
 ```
 
-<details><summary>Tipo Veneno Fracos</summary>
-  Os 10 Pokemons do tipo veneno mais fracos
+<details><summary>Weak Poison Type</summary>
+  The 10 weakest poison Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Poison')].iloc[0:10]
 ```
 
-<details><summary>Tipo Terra Fortes</summary>
-  Os 10 Pokemons do tipo terra mais fortes
+<details><summary>Strong Earth Type</summary>
+  The 10 strongest earth-type Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Ground')].iloc[0:10]
 ```
 
-<details><summary>Tipo Terra Fracos</summary>
-  Os 10 Pokemons do tipo terra mais fracos
+<details><summary>Weak Earth Type</summary>
+ The 10 weakest earth type Pokemon
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Ground')].iloc[0:10]
 ```
 
-<details><summary>Tipo Voador Fortes</summary>
-  Os 10 Pokemons do tipo voador mais fortes
+<details><summary>Strong Flying Type</summary>
+  The 10 strongest flying type Pokemon
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Flying')].iloc[0:10]
 ```
 
-<details><summary>Tipo Voador Fracos</summary>
-  Os 4 Pokemons do tipo voador mais fracos
+<details><summary>Weak Flying Type</summary> 
+  The 4 weakest flying type Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Flying')].iloc[0:10]
 ```
 
-<details><summary>Tipo Psíquico Fortes</summary>
-  Os 10 Pokemons do tipo psíquico mais fortes
+<details><summary>Strong Psychic Type</summary>
+  The 10 strongest psychic type Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Psychic')].iloc[0:10]
 ```
 
-<details><summary>Tipo Psíquico Fracos</summary>
-  Os 10 Pokemons do tipo psíquico mais fracos
+<details><summary>Weak Psychic Type</summary>
+  The 10 weakest psychic type Pokemon
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Psychic')].iloc[0:10]
 ```
 
-<details><summaryTipo Inseto Fortes></summary>
-  Os 10 Pokemons do tipo inseto mais fortes
+<details><summary>Strong Insect Type></summary>
+  The 10 strongest insect-type Pokemon
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Bug')].iloc[0:10]
 ```
 
-<details><summary>Tipo Inseto Fracos</summary>
-  Os 10 Pokemons do tipo inseto mais fracos
+<details><summary>Type Insect Weak</summary>
+  The 10 weakest insect type Pokemon
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Bug')].iloc[0:10]
 ```
 
-<details><summary>Tipo Pedra Fortes</summary>
-  Os 10 Pokemons do tipo pedra mais fortes
+<details><summary>Type Strong Stone</summary>
+  The 10 strongest stone type Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Rock')].iloc[0:10]
 ```
 
-<details><summary>Tipo Pedra Fracos</summary>
-  Os 10 Pokemons do tipo pedra mais fracos
+<details><summary>Type Weak Stone</summary>
+  The 10 weakest stone Pokemon
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Rock')].iloc[0:10]
 ```
 
-<details><summary>Tipo Fantasma Fortes</summary>
-  Os 10 Pokemons do tipo fantasma mais fortes
+<details><summary>Strong Ghost Type</summary>
+  The 10 strongest ghost type Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Ghost')].iloc[0:10]
 ```
 
-<details><summary>Tipo Fantasma Fracos</summary>
-  Os 10 Pokemons do tipo fantasma mais fracos 
+<details><summary>Weak Phantom Type</summary>
+  The 10 weakest ghost type Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Ghost')].iloc[0:10]
 ```
 
-<details><summary>Tipo Dragão Fortes</summary>
-  Os 10 Pokemons do tipo dragão mais fortes
+<details><summary>Strong Dragon Type</summary>
+ The 10 strongest dragon type Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Dragon')].iloc[0:10]
 ```
 
-<details><summary>Tipo Dragão Fracos</summary>
-  Os 10 Pokemons do tipo dragão mais fracos
+<details><summary>Weak Dragon Type</summary>
+  The 10 weakest dragon type Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Dragon')].iloc[0:10]
 ```
 
-<details><summary>Tipo Noturno Fortes</summary>
-  Os 10 Pokemons do tipo noturno mais fortes
+<details><summary>Strong Night Type</summary>
+  The 10 strongest night type Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Dark')].iloc[0:10]
 ```
 
-<details><summary>Tipo Noturno Fracos</summary>
-  Os 10 Pokemons do tipo noturno mais fracos
+<details><summary>Weak Night Type</summary>
+  The 10 weakest night type Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Dark')].iloc[0:10]
 ```
 
-<details><summary>Tipo Aços Fortes</summary>
-  Os 10 Pokemons do tipo aço mais fortes
+<details><summary>Type Strong Steels</summary>
+  The 10 strongest steel-type Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Steel')].iloc[0:10]
 ```
 
-<details><summary>Tipo Aços Fracos</summary>
-  Os 10 Pokemons do tipo aço mais fracos
+<details><summary>Type Weak Steels</summary>
+  The 10 weakest steel-type Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Steel')].iloc[0:10]
 ```
 
-<details><summary>Tipo Fada Fortes</summary>
-  Os 10 Pokemons do tipo fada mais fortes
+<details><summary>Strong Fairy Type</summary>
+  The 10 strongest fairy Pokemon
 </details>
 
 ```
 df.sort_values('Total', ascending=False).loc[(df['Type 1'] == 'Fairy')].iloc[0:10]
 ```
 
-<details><summary>Tipo Fada Fracos</summary>
-  Os 10 Pokemons do tipo fada mais fracos
+<details><summary>Weak Fairy Type</summary>
+  The 10 weakest fairy Pokémon
 </details>
 
 ```
 df.sort_values('Total', ascending=True).loc[(df['Type 1'] == 'Fairy')].iloc[0:10]
 ```
 
-- ## A contagem de todos os tipos de Pokemons
+- ## Counting all types of Pokemon
 
-<details><summary>Todos os Tipos de Pokemons</summary>
-  Contando quantos Pokemons de todos os tipos existem no arquivo
+<details><summary>All Types of Pokemons</summary>
+  Counting how many Pokemons of all types are in the file
 </details>
 
 ```
 df.groupby(['Type 1']).count()
 ```
 
-<details><summary>Calculando</summary>
-  Calculando todos os tipos de Pokemons
+<details><summary>Calculating</summary>
+  Calculating all types of Pokémon
 </details>
 
 ```
@@ -489,22 +488,22 @@ steel = df[df['Type 1'] == 'Steel'].shape[0]
 water = df[df['Type 1'] == 'Water'].shape[0]
 ```
 
-- ## Visualização em Gráficos
+- ## Graphics View
 
-<details><summary>Gráfico 1</summary>
-  Porcentagem dos tipos de Pokemons
+<details><summary>Graphic 1</summary>
+  Percentage of Pokemon types
 </details>
 
 ```
-# Area de Protagem
+# Protecting Area
 
 figl, axl = plt.subplots()
 
-# Gráfico
+# Graphics
 
 axl.pie(tamanhos, labels=tipos, autopct='%1.1f%%', shadow=True, startangle=100)
 
-# Gráfico em circulo
+# Circle chart
 axl.axis('equal')
 plt.title('Porcentagem dos tipos de Pokemons')
 plt.plot
@@ -515,20 +514,20 @@ plt.show()
 
 ```
 
-<details><summary>Gráfico 2</summary>
-  Fogo Vs Água
+<details><summary>Graph 2</summary>
+  Fire Vs Water
 </details>
 
 ```
-# Type 1 e 2 que contem todos os tipos de Pokemons de Fogo
+# Type 1 and 2 containing all types of Fire Pokémon
 fogo = df[(df['Type 1'] == 'Fire') | ((df['Type 2']) == 'Fire')]
 
 
-# Type 1 e 2 que contem todos os tipos de Pokemons de Água
+# Type 1 and 2 containing all types of Water Pokemons
 agua = df[(df['Type 1'] == 'Water') | ((df['Type 2']) == 'Water')]
 
 
-# Gráfico Scatter PLot
+# Graphic Scatter PLot
 plt.scatter(fogo.Attack.head(50), fogo.Defense.head(50), color='R', label = 'Fire', marker='*', s=50)
 
 plt.scatter(agua.Attack.head(50), agua.Defense.head(50), color='B', label = 'Water', s=25)
@@ -542,8 +541,8 @@ fig.set_size_inches(12,12) #
 plt.show()
 ```
 
-<details><summary>Gráfico 3</summary>
-  Números dos Pokemons por tipos e as gerações
+<details><summary>Graphic 3</summary>
+  Pokemon numbers by types and generations
 </details>
 
 ```
